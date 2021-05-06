@@ -1,5 +1,5 @@
 #2021/4/27  Dekafa
-#dcard初爬 爬取文章id, 標題, 內文, 發文時間, 版名, 回文數, 喜歡數, 網址 等欄位
+#dcard初爬 爬取最新文章id, 標題, 內文, 發文時間, 版名, 回文數, 喜歡數, 網址 等欄位
 
 import pandas as pd
 import requests
