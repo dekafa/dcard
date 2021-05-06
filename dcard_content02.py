@@ -11,7 +11,7 @@ import article
 
 # 時事版
 board = 'trending'
-filename = 'dcard_trending01.csv'
+filename = 'dcard_trending.csv'
 
 # 親子版
 # board = 'parentchild'
