@@ -24,7 +24,7 @@ resq = ss.get(url)
 rejs = resq.json()
 df = pd.DataFrame()
 for i in range(len(rejs)):
-    df = df.append(article(rejs[i]['id']),ignore_index=True)
+    df = df.append(article.content(rejs[i]['id']),ignore_index=True)
     sleep(random.randint(6,10))
 
 df['time'] = df['time'].str.split('T',expand=True)[0]

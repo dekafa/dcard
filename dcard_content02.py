@@ -11,7 +11,7 @@ import article
 
 # 時事版
 board = 'trending'
-filename = 'dcard_trending01.csv'
+filename = 'dcard_trending.csv'
 
 # 親子版
 # board = 'parentchild'
@@ -21,7 +21,7 @@ filename = 'dcard_trending01.csv'
 # 讀取csv最後一篇id 並往下抓100x篇的json
 df = pd.read_csv(filename)
 
-for j in range(3):
+for j in range(1):
     last = str(int(df.tail(1).id)) 
     url = 'https://www.dcard.tw/service/api/v2/forums/'+board+'/posts?popular=false&limit=100&before=' + last
     ss = requests.session()
