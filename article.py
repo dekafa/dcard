@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 
+
 def content(id, board):
     link = 'https://www.dcard.tw/service/api/v2/posts/' + str(id)
     ss = requests.session()
@@ -20,5 +21,3 @@ def content(id, board):
             }],
             columns=['id', 'title', 'content', 'time', 'forumname', 'commentcount', 'likecount', 'url']
             ))
-
-
